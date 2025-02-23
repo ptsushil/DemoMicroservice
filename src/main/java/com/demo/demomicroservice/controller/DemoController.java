@@ -12,6 +12,7 @@ public class DemoController {
     @RequestMapping(value = "/hello/{name}",  method = RequestMethod.GET)
     public String helloWorld(@PathVariable String name)
     {
+        System.out.println("Name :"+name);
         return name;
     }
 }
